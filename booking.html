@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Yummy restaurant</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    </head>
+    <body>
+        <header class="container group">
+            <h1 class="logo">
+                <a href="index.html">Yummy <br> restaurant</a>
+            </h1>
+            <h3 class="tagline">Best food</h3>
+            <nav class="nav-primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="location.html">Location</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="row-gradient">
+            <div class="container">
+                <h1>Booking</h1>
+                <p>Book a table now for your best dining experience.</p>
+            </div>
+        </section>
+        <section class="row">
+            <div class="grid">
+                <form name="booking" action="#" method="post">
+                    <fieldset class="book-table">
+                        <label>Name
+                            <input type="text" name="name" placeholder="Name" required>
+                        </label>
+
+                        <label>Surname
+                            <input type="text" name="surname" placeholder="Surname" required>
+                        </label>
+                        <label>Email
+                            <input type="email" name="email" placeholder="Email address">
+                        </label>
+                        <label>Telephone
+                            <input type="tel" name="telephone" placeholder="Telephone number" required>
+                        </label>
+                        <label>
+                            Number of guests
+                            <select name="amount" required>
+                                <option value="1">1</option>
+                                <option value="2" selected>2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
+                        </label>
+                        <label>
+                            Comments
+                            <textarea name="comments"></textarea>
+                        </label>
+                    </fieldset>
+                    <input class="btn btn-default" type="submit" name="submit" value="Book">
+                </form>
+            </div>
+        </section>
+        <footer class="container group footer-primary">
+            &copy; Yummy restaurant 2019
+        </footer>
+    </body>
+</html>
